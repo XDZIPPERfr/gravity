@@ -41,7 +41,7 @@ relays: [
 };
 
 var q = window.location.search;
-if((typeof q === "string") && q[0] === "?" && (typeof window.URLSearchParams !== "undefined")) {
+if((typeof q === "string") &amp;&amp; q[0] === "?" &amp;&amp; (typeof window.URLSearchParams !== "undefined")) {
 q = new window.URLSearchParams(q);
 var s = q.get("server");
 if(s) window.eaglercraftXOpts.joinServer = s;
